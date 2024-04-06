@@ -8,7 +8,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 class Model:
     __model_name = "x3d_m"
-    __weights = torch.load("x3d_m/x3d_m.ckpt")
+    __weights = torch.load("vcab/x3d_m.ckpt")
 
     def __init__(self) -> None:
         self.__model = torch.hub.load(
