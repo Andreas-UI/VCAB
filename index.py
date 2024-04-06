@@ -1,4 +1,4 @@
-from x3d_m import Model, save_video_stream_predictions
+from vcab import Model, save_video_stream_predictions
 
 video_path = r"v_ArmFlapping_01.mp4"
 predictions = Model().predict_stream(video_path=video_path)

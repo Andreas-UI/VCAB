@@ -8,7 +8,7 @@ setup(
     description="""A tool to classify autism behaviour in children using deep learning model""",
     long_description_content_type="text/markdown",
     author="Andreas Susanto",
-    packages=find_packages(include=["x3d_m"]),
+    packages=find_packages(include=["vcab"]),
     install_requires=required,
     license="MIT",
     url="https://github.com/Andreas-UI/VCAB",

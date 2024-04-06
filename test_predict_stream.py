@@ -1,4 +1,4 @@
-from x3d_m import Model, save_video_stream_predictions
+from vcab import Model, save_video_stream_predictions
 
 
 def test_predict_stream():

@@ -1,6 +1,6 @@
 # How to use
 ```python
-from x3d_m import Model, save_video_stream_predictions
+from vcab import Model, save_video_stream_predictions
 
 video_path = "example.mp4"
 
