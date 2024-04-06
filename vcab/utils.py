@@ -44,10 +44,9 @@ def save_video_stream_predictions(video_path: str, predictions, output_path="out
 
             if current_time >= start_sec and current_time <= end_sec:
                 for i, text in enumerate(texts):
-                    text_size = cv2.getTextSize(
-                        text[0], font, font_scale, 1)[0]
+                    max_text_height = max(cv2.getTextSize(text[0], font, font_scale, 1)[0][1] for text in texts)
                     text_x = 10
-                    text_y = 10 + i * (text_size[1] + 5)
+                    text_y = 10 + max_text_height + i * (max_text_height + 5)
                     cv2.putText(frame, f"{text[0]} {text[1]}", (text_x, text_y),
                                 font, font_scale, color, 1, cv2.LINE_AA)
 
