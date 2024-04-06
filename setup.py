@@ -9,6 +9,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Andreas Susanto",
     packages=find_packages(include=["vcab"]),
+    package_data={'': ['*.ckpt']},
     install_requires=required,
     license="MIT",
     url="https://github.com/Andreas-UI/VCAB",
