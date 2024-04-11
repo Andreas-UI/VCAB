@@ -15,4 +15,7 @@ save_video_stream_predictions_v2(
 ```
 
 # Requirements
-Built under python 3.10.11
+Built under python 3.10.11 and tested on python 3.9 >=, 3.11.5 <=
+
+# Important
+Please install ffmpeg on your machine to use this package. [link](https://www.hostinger.my/tutorials/how-to-install-ffmpeg)
