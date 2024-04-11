@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="vcab",
-    version="1.0.0",
+    version="v0.1.0-beta",
     description="""A tool to classify autism behaviour in children using deep learning model""",
     long_description_content_type="text/markdown",
     author="Andreas Susanto",

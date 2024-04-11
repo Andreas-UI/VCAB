@@ -1,6 +1,6 @@
 # How to use
 ```python
-from vcab import Model, save_video_stream_predictions
+from vcab import Model, save_video_stream_predictions_v2
 
 video_path = "example.mp4"
 
@@ -8,7 +8,7 @@ video_path = "example.mp4"
 predictions = Model().predict_stream(video_path=video_path)
 
 # Mask video with prediction
-save_video_stream_predictions(
+save_video_stream_predictions_v2(
     video_path=video_path,
     predictions=predictions, 
     output_path="example_output.mp4")
