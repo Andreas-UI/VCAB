@@ -25,7 +25,7 @@ pillow==10.3.0
 portalocker==2.8.2
 pytorch-lightning==2.2.1
 pytorchvideo @ git+https://github.com/facebookresearch/pytorchvideo.git@1fadaef40dd393ca09680f55582399f4679fc9b7
-pywin32==306
+pywin32==306 ; platform_system=="Windows"
 PyYAML==6.0.1
 sympy==1.12
 tabulate==0.9.0
