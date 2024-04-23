@@ -110,6 +110,6 @@ class Transform:
 
         # get the last uncatch frames
         video_data = video.get_clip(start_sec=start_sec, end_sec=duration)
-        transformed_data.append((start_sec, end_sec, transform(video_data)))
+        transformed_data.append((start_sec, duration, transform(video_data)))
 
         return transformed_data
