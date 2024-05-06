@@ -7,12 +7,12 @@ colorama==0.4.6
 exceptiongroup==1.2.0
 ffmpeg-python==0.2.0
 ffmpegcv==0.3.13
-filelock==3.13.3
+filelock
 frozenlist==1.4.1
 fsspec==2024.3.1
 future==1.0.0
 fvcore==0.1.5.post20221221
-idna==3.6
+idna
 iniconfig==2.0.0
 iopath==0.1.10
 Jinja2==3.1.3
@@ -20,15 +20,15 @@ lightning-utilities==0.11.2
 MarkupSafe==2.1.5
 mpmath==1.3.0
 multidict==6.0.5
-networkx==3.2.1
-numpy==1.26.4
-opencv-python==4.9.0.80
+networkx
+numpy
+opencv-python
 packaging==24.0
 parameterized==0.9.0
 pillow==10.3.0
-pluggy==1.4.0
+pluggy
 portalocker==2.8.2
-pytest==8.1.1
+pytest
 pytorch-lightning==2.2.1
 pytorchvideo @ git+https://github.com/facebookresearch/pytorchvideo.git@1fadaef40dd393ca09680f55582399f4679fc9b7
 pywin32==306 ; platform_system=="Windows"
@@ -40,7 +40,7 @@ tomli==2.0.1
 torch==2.2.2
 torchmetrics==1.3.2
 torchvision==0.17.2
-tqdm==4.66.2
+tqdm
 typing_extensions==4.11.0
 yacs==0.1.8
 yarl==1.9.4
