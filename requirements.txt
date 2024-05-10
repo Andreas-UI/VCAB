@@ -32,7 +32,7 @@ kiwisolver==1.4.5
 lightning-utilities==0.11.2
 MarkupSafe==2.1.5
 matplotlib==3.8.4
-MEGraphAU @ git+https://github.com/Andreas-UI/ME-GraphAU-Video.git@0fbbd31d4f2b3a36b6a2f30ce0e729f052db2370
+MEGraphAU @ git+https://github.com/Andreas-UI/ME-GraphAU-Video.git@7dde9fae981aa5fc387e241cc6138a2421bfd474
 mkl==2021.4.0 ; platform_system=="Windows"
 mpmath==1.3.0
 multidict==6.0.5
