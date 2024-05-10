@@ -10,7 +10,8 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 class Model:
     __model_name = "x3d_m"
-    __weights = torch.load(pkg_resources.resource_filename("vcab", "x3d_m.ckpt"))
+    __weights = torch.load(
+        pkg_resources.resource_filename("vcab", "x3d_m.ckpt"))
 
     def __init__(self) -> None:
         self.__model = torch.hub.load(
@@ -42,3 +43,12 @@ class Model:
             A list of list with tuples [[start_sec, end_sec, (category, probability)], ...]
         """
         return Prediction(model=self.__model).predict_stream(video_path=video_path)
+
+    def predict_stream_emotion(self, video_path: str):
+        """
+        Args: 
+            video_path <- path to video
+        Output:
+            A list of list with tuples [[start_sec, end_sec, (category, probability)], ...]
+        """
+        return Prediction(model=self.__model).predict_stream_emotion(video_path=video_path)

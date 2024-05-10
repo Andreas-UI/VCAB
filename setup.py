@@ -4,12 +4,12 @@ with open("requirements.txt") as f:
 
 setup(
     name="vcab",
-    version="v0.1.0-beta",
+    version="v0.1.1-beta",
     description="""A tool to classify autism behaviour in children using deep learning model""",
     long_description_content_type="text/markdown",
     author="Andreas Susanto",
     packages=find_packages(include=["vcab"]),
-    package_data={'': ['*.ckpt']},
+    package_data={'': ['*.ckpt', '*.pt', '*.pth']},
     install_requires=required,
     license="MIT",
     url="https://github.com/Andreas-UI/VCAB",

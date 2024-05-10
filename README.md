@@ -5,12 +5,13 @@ from vcab import Model, save_video_stream_predictions_v2
 video_path = "example.mp4"
 
 # Get video stream predictions
-predictions = Model().predict_stream(video_path=video_path)
+actions, emotions, autism, autism_percentage, video_output = Model().predict_stream_emotion(video_path=video_path)
 
 # Mask video with prediction
 save_video_stream_predictions_v2(
     video_path=video_path,
-    predictions=predictions, 
+    action_predictions=actions,
+    autism_predictions=autism, 
     output_path="example_output.mp4")
 ```
 
