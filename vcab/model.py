@@ -52,3 +52,12 @@ class Model:
             A list of list with tuples [[start_sec, end_sec, (category, probability)], ...]
         """
         return Prediction(model=self.__model).predict_stream_emotion(video_path=video_path)
+    
+    def predict_stream_emotion_stage_1(self, video_path: str):
+        """
+        Args: 
+            video_path <- path to video
+        Output:
+            A dataframe for the video
+        """
+        return Prediction(model=self.__model).predict_stream_emotion_stage_1(video_path=video_path)
